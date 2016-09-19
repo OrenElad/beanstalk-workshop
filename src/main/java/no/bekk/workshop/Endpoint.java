@@ -13,12 +13,12 @@ public class Endpoint {
     @RequestMapping(name = "/ping", path = "/")
     public String ping() {
         System.out.println("Request: /ping");
-        return "plong";
+        return "pong";
     }
 
     @RequestMapping(name = "/500", path = "/500")
     public String Error() {
-        System.err.println("Request: /500 says Error: <your-name>");
+        System.err.println("Request: /500 says Error: Stein Inge");
         return "Error";
     }
 
